@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#nav-sidebar").load("nav-sidebar.html");
+        });
+    </script>
+<link rel="stylesheet" href="~/css/resetpass.css">
+<body>
+    <div class="container-fluid w-100 h-100 p-0">
+        <div id="nav-sidebar"></div>
+        <div class="row p-0 h-100 d-flex">
+            
+            <div class="content pt-3 ">
+                <div class="mb-4">
+                    <h1>Change Password</h1>
+                </div>
+                <div class="w-50 h-25 ">
+                    <div class="row d-flex flex-column mt-3">
+                        <small class="mb-2">Enter a new password to update your account credentials</small>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Current password*" aria-label="" aria-describedby="basic-addon2">
+                            <span class="input-group-text" id="basic-addon2"><img src="images/eye_15732976.png"   alt=""></span>
+                          </div>
+                          <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="New password*" aria-label="" aria-describedby="basic-addon2">
+                            <span class="input-group-text" id="basic-addon2"><img src="images/eye_15732976.png" alt=""></span>
+                          </div>
+                          <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="New Password*" aria-label="" aria-describedby="basic-addon2">
+                            <span class="input-group-text" id="basic-addon2"><img src="images/eye_15732976.png"  alt=""></span>
+                          </div>
+                          <div class="d-flex">
+                              <!-- <button type="button" class="btn btn-primary me-2">submit</button> -->
+                              <button type="button" class="btn btn-primary me-2" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+                                submit
+                              </button>
+                              <button type="button" class="btn btn-outline-primary">cancel</button>
+                          </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        
+        <div class="modal-body d-flex flex-column align-items-center justify-content-center">
+            <img src="images/icons/icons8-alert-48.png" style="width:70px" class="mb-1"alt="">
+            <h5 class="mb-2">Are you sure you want to logout?</h5>
+            <div>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Yes</button>
+                <button type="button" class="btn btn-outline-primary">No</button>
+            </div>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+
+
+  <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+  <script src="js/rstpwd.js"></script>
+        
+        </div>
+</body>
+
+</html>

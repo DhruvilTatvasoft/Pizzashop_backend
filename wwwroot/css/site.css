@@ -1,0 +1,51 @@
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+  /* overflow: hidden; */
+}
+.img-container img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.container-fluid{
+  /* overflow: hidden; */
+  overflow-x: hidden;
+}
+.form-container{
+  background-color: #D8EFF7;
+  
+}
+.logo-img{
+  width: 14%;
+  height: auto;
+}
+.ps-label{
+  font-size: 36px;
+  color: #1D7BB9;
+}
+input{
+  height: 25%;
+}
+.input-group{
+  
+}
+.invalidmsg{
+  font-size: 13px;
+  
+}

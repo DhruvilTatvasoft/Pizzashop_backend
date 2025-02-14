@@ -1,0 +1,75 @@
+﻿@{
+    ViewData["Title"] = "index page";
+}
+@model LoginViewModel
+ <div class="container-fluid vh-100 p-0">
+        <div class="row h-100">
+            <div class="col-lg-6 col-md-6 img-container p-0">
+              <img src="~/images/dominos_background.jpg" alt="">
+            </div>
+            <div class="col-lg-6 col-md-6 form-container d-flex align-items-center justify-content-center">
+                <div class="pizashop-logo mb-4">
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img src="~/images/pizzashop_logo.png" class="logo-img" alt="Company Logo"/>
+                        <label for="" class="ps-label">PIZZASHOP</label>
+                    </div>
+
+                    <form class="myForm form-group w-75 mt-4" asp-action="Index" method="post">
+                        <label for="" class="login-text mb-3">Welcome,</label>
+                        <div class="d-flex flex-column">
+                        <div class="input-group mb-1">
+                            <input type="text" class="form-control" id="emailInput" placeholder="Email" name="username" required>
+                            
+                            <div class="input-group-append">
+                                <span class="input-group-text" id="basic-addon2" style="
+                                border-radius: 0px 8px 7px 0px;
+                                background: white;
+                                border-left-: 0;
+                                padding: 0.264rem 0.75rem;
+                                border-left: none;
+                            "><img src="images/image.png" style="width:25px;" alt=""></span>
+                            </div>
+                          </div>
+                          <span asp-validation-for="username" class="mb-2 text-danger invalidmsg"></span>
+                          </div>
+                          <div class="d-flex flex-column">
+
+                   
+                        <div class="input-group mb-1">
+                            <input type="text" class="form-control" placeholder="Password" name="password" required>
+                            
+                            <div class="input-group-append">
+                                <span class="input-group-text" id="basic-addon2" style="
+                                border-radius: 0px 8px 7px 0px;
+                                background: white;
+                                border-left-: 0;
+                                padding: 0.264rem 0.75rem;
+                                border-left: none;
+                            "><img src="images/eye_15732976.png" style="width:25px;" alt=""></span>
+                            </div>
+                          </div>
+                          <span asp-validation-for="password" class="mb-2 text-danger invalidmsg"></span>
+                                 </div>
+                        <div class="d-flex flex-row justify-content-between mb-1">
+                            <div class="form-check">
+                                <input class="form-check-input" name="IsChecked" asp-for="IsChecked" type="checkbox" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                Remember me
+                                </label>
+                              </div>
+                          <div class="forgot-password mt-2">
+                            <a asp-controller="Login" asp-action="ForgetPass" >Forget Password </a>
+                          </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100" >Login</button>
+                        
+                      </form>
+                </div>
+            </div>
+        </div>
+    </div>  
+
+
+    
